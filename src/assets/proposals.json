@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Propuesta 1",
+        "content": "Impulsaremos el apoyo a las empresas que operan Residuos de Aparatos Eléctricos y Electrónicos (RAEE) a nivel nacional.",
+        "parties": ["Juntos por el Perú", "Partido Morado"],
+        "alert": true,
+        "category": "cambio climático"
+    },
+    {
+        "title": "Propuesta 2",
+        "content": "Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.",
+        "parties": ["APRA", "Partido Morado"],
+        "alert": false,
+        "category": "cambio climático"
+    },
+    {
+        "title": "Propuesta 3",
+        "content": "Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.",
+        "parties": ["APRA", "Partido Morado"],
+        "alert": false,
+        "category": "cambio climático"
+    },
+    {
+        "title": "Propuesta 4",
+        "content": "Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.",
+        "parties": ["APRA", "Partido Morado"],
+        "alert": false,
+        "category": "deforestación"
+    },
+    {
+        "title": "Propuesta 5",
+        "content": "Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.",
+        "parties": ["Acción popular", "Partido Morado"],
+        "alert": false,
+        "category": "deforestación"
+    },
+    {
+        "title": "Propuesta 6",
+        "content": "Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.",
+        "parties": ["APRA", "Juntos por el Perú"],
+        "alert": false,
+        "category": "conflictos socioambientales"
+    },
+    {
+        "title": "Propuesta 7",
+        "content": "Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.",
+        "parties": ["APRA", "Juntos por el Perú"],
+        "alert": false,
+        "category": "conflictos socioambientales"
+    },
+    {
+        "title": "Propuesta 9",
+        "content": "Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.",
+        "parties": ["APRA", "Juntos por el Perú"],
+        "alert": false,
+        "category": "gestion del agua"
+    },
+    {
+        "title": "Propuesta 10",
+        "content": "Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.",
+        "parties": ["APRA", "Juntos por el Perú"],
+        "alert": false,
+        "category": "residuos sólidos"
+    }
+]
