@@ -1,3 +1,20 @@
+header {
+   height: 20vh;
+
+   h1 {
+      position: absolute;
+      margin-left: 15%
+   }
+
+   img {
+      position: absolute;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    margin-left: 90%;
+   }
+}
+
 .container {
     display: flex;
     flex-direction: column;
