@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,12 +10,12 @@ export class HomeComponent implements OnInit {
 
   viewMode = 'topic';
   
-  constructor() { }
-
+  constructor(private router: Router) { }
   ngOnInit(): void {
   }
-hover = (target) => {
-  console.log(target);
-  target.classList.add('show-card');
-}
+
+btnClick= function () {
+  console.log(this)
+  this.router.navigateByUrl('/topics');
+};
 }
