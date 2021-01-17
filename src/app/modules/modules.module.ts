@@ -8,7 +8,11 @@ import { NavBarComponent } from './categories/components/nav-bar/nav-bar.compone
 
 
 @NgModule({
-  declarations: [HomeComponent, CategoriesComponent, CardsComponent, NavBarComponent],
+  declarations: [
+    HomeComponent, 
+    CategoriesComponent, 
+    CardsComponent, 
+    NavBarComponent],
   imports: [
     CommonModule
   ]
