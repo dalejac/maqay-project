@@ -1,4 +1,6 @@
 .container-proposals{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 320px;
     height: 270px;
@@ -13,9 +15,10 @@
     border-radius: inherit;
     width: 280px;
     height: 230px;
-    padding: 20px;
-    
+    margin: 10px;
+    padding: 15px;
 }
+
 .container-proposals-title{
     font-size: 1.2em;
     font-weight: 500;

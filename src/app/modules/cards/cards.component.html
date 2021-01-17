@@ -1,5 +1,5 @@
-<div class="container-proposals">
-    <div *ngFor="let proposal of records.Proposals" class="content">
+<div class="container-proposals" *ngFor="let proposal of records.Proposals">
+    <div class="content">
     <p class="container-proposals-title"> {{ proposal.title }}</p>
     <div class="container-proposals-content">
         {{ proposal.content }}
@@ -17,4 +17,5 @@
         </a>
 
     </div> 
+    </div>
 </div>
