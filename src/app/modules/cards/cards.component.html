@@ -1,10 +1,10 @@
 <div class="container-proposals">
-    <div *ngFor="let data of records?.Proposal; index as i" class="content">
-    <p class="container-proposals-title"> {{ data.title }}</p>
+    <div *ngFor="let proposal of records.Proposals" class="content">
+    <p class="container-proposals-title"> {{ proposal.title }}</p>
     <div class="container-proposals-content">
-        {{ data.content }}
+        {{ proposal.content }}
     </div>
-    <span class="text-small">Propuestas de: {{ data.parties }}</span>
+    <span class="text-small">Propuestas de: {{ proposal.parties }}</span>
     <div class="container-proposals-footer">  
         <img class="partie-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Logo_juntos_por_el_Peru.svg/150px-Logo_juntos_por_el_Peru.svg.png" alt="">
 

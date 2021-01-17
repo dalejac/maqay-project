@@ -9,16 +9,16 @@ import { Info } from '../model/proposals.model';
 })
 
 export class ProposalsService {
+  [x: string]: any;
 
   private content: Info;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   apiURL = '../../assets/proposals.json';
 
-  getContent(): Observable<Info>{
-    return this.httpClient.get<Info>(`${this.apiURL}`);
-
-  } 
+  getContent(url: string){
+    return this.http.get(url);
+  }
 }
-// console.log(this.data);
+console.log(data);

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Content } from '../../model/info.model';
-import { ProposalsService } from '../../services/proposals.service';
+import { Content } from 'src/app/model/info.model';
+import { ProposalsService } from 'src/app/services/proposals.service';
 
 @Component({
   selector: 'app-cards',
@@ -9,12 +9,17 @@ import { ProposalsService } from '../../services/proposals.service';
 })
 export class CardsComponent implements OnInit {
 
-  records: Content;
+  records: any = [];
+  url = '../../assets/proposals.json';
 
   constructor(private apiService: ProposalsService) { }
 
   ngOnInit(): void {
+    this.apiService.getContent(this.url)
+      .subscribe((data) => this.displayData(data));
   }
-
- 
+  displayData(data: any): any {
+    this.records = data;
+    console.log(this.records);
+  }
 }
