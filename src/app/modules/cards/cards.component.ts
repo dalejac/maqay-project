@@ -9,7 +9,7 @@ import { ProposalsService } from 'src/app/services/proposals.service';
 })
 export class CardsComponent implements OnInit {
 
-  records: any = [];
+  records: any= [];
   url = '../../assets/proposals.json';
 
   constructor(private apiService: ProposalsService) { }

@@ -1,26 +1,35 @@
 <section class="container">
-    <div class="transparency">
-        <h1>
-            Conoce las propuestas de los candidatos
-        </h1>
+    <!-- <div class="transparency"> -->
+        <h1>Conoce las propuestas de los candidatos</h1>
         <h2>ELECCIONES 2021</h2>
-
         <br>
-
-        <p>Ordena las propuestas</p>
-
-        <button [class.active]="viewMode == 'topic'" rel="topic" (click)="viewMode = 'topic'">Por tema ambiental</button>
-        <button [class.active]="viewMode == 'party'" rel="party" (click)="viewMode = 'party'">Por partido político</button>
-    </div>
+        <br>
+        <p>Ordenar propuestas</p>
+        <div class="container-buttons"><!-- (click)="viewMode = 'topic'"  -->
+            <button [class.active]="viewMode == 'topic'" rel="topic" (click)="viewMode = 'topic'" >Por tema ambiental</button>
+            <button [class.active]="viewMode == 'party'" rel="party" (click)="viewMode = 'party'">Por partido político</button>
+        </div>
+         <!-- </div> -->
 </section>
 <section class="cards-box" [ngSwitch]="viewMode">
     <div class="topic-cards" *ngSwitchCase="'topic'">
-        <div class="card" (click)="change()"><img src="/assets/images/climateChange.png"><div class="sub-card"><h1>Cambio climático</h1><p>Propuestas de:</p></div></div>
-        <div class="card"><img src="/assets/images/solidResidue.png"><div class="sub-card"><h1>Residuos sólidos</h1><p>Propuestas de:</p></div></div>
-        <div class="card"><img src="/assets/images/waterManagement.png"><div class="sub-card"><h1>Gestión de agua</h1><p>Propuestas de:</p></div></div>
-        <div class="card"><img src="/assets/images/deforestation.png"><div class="sub-card"><h1>Deforestación</h1><p>Propuestas de:</p></div></div>
-        <div class="card"><img src="/assets/images/loggin-mining.png"><div class="sub-card"><h1>Tala y minería ilegal</h1><p>Propuestas de:</p></div></div>
-        <div class="card"><img src="/assets/images/conflicts.png"><div class="sub-card"><h1>Conflictos socioambientales</h1><p>Propuestas de:</p></div></div>
+        <div class="card card-1" ><img src="/assets/images/climateChange.png"><div class="sub-card"><h1>Cambio climático</h1><p>Propuestas de:</p></div></div>
+        <div class="card-hover-1"  (click)="change()"><span>Cambio climático</span>Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.</div>
+        
+        <div class="card card-2"><img src="/assets/images/solidResidue.png"><div class="sub-card"><h1>Residuos sólidos</h1><p>Propuestas de:</p></div></div>
+        <div class="card-hover-2"><span>Cambio climático</span>Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.</div>
+        
+        <div class="card card-3"><img src="/assets/images/waterManagement.png"><div class="sub-card"><h1>Gestión de agua</h1><p>Propuestas de:</p></div></div>
+        <div class="card-hover-3"><span>Cambio climático</span>Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.</div>
+        
+        <div class="card card-4"><img src="/assets/images/deforestation.png"><div class="sub-card"><h1>Deforestación</h1><p>Propuestas de:</p></div></div>
+        <div class="card-hover-4"><span>Cambio climático</span>Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.</div>
+        
+        <div class="card card-5"><img src="/assets/images/loggin-mining.png"><div class="sub-card"><h1>Tala y minería ilegal</h1><p>Propuestas de:</p></div></div>
+        <div class="card-hover-5"><span>Cambio climático</span>Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.</div>
+        
+        <div class="card card-6"><img src="/assets/images/conflicts.png"><div class="sub-card"><h1>Conflictos socioambientales</h1><p>Propuestas de:</p></div></div>
+        <div class="card-hover-6"><span>Cambio climático</span>Lograr la matriz energética está basada en energías renovables. % de la matriz energética del Perú son renovables.</div>
     </div>
 
     <div class="parties-cards"  *ngSwitchCase="'party'">
