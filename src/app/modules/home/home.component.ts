@@ -10,12 +10,13 @@ export class HomeComponent implements OnInit {
 
   viewMode = 'topic';
   
-  constructor(private router: Router) { }
+  constructor(private router:Router) { }
+
   ngOnInit(): void {
   }
 
-btnClick= function () {
-  console.log(this)
-  this.router.navigateByUrl('/topics');
-};
+  change(): void {
+    this.router.navigate(['topics']);
+  }
+
 }
