@@ -9,6 +9,7 @@ import { Info } from '../model/proposals.model';
 })
 
 export class ProposalsService {
+  [x: string]: any;
 
   private content: Info;
 
@@ -16,8 +17,8 @@ export class ProposalsService {
 
   apiURL = '../../assets/proposals.json';
 
-  getContent(): Observable<Info>{
-    return this.httpClient.get<Info>(`${this.apiURL}`);
-  } 
+  getContent(url: string){
+    return this.http.get(url);
+  }
 }
 console.log(data);
