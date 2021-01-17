@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Content } from 'src/app/model/info.model';
-import { ProposalsService } from 'src/app/services/proposals.service';
+import { Content } from '../../model/info.model';
+import { ProposalsService } from '../../services/proposals.service';
 
 @Component({
   selector: 'app-cards',
@@ -14,11 +14,7 @@ export class CardsComponent implements OnInit {
   constructor(private apiService: ProposalsService) { }
 
   ngOnInit(): void {
-    this.getData();
   }
 
-  getData(): void {
-    this.apiService.getContent().subscribe((data: Content) => this.records = data);
-  } 
-
+ 
 }

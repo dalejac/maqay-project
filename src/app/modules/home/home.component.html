@@ -15,7 +15,7 @@
 </section>
 <section class="cards-box" [ngSwitch]="viewMode">
     <div class="topic-cards" *ngSwitchCase="'topic'">
-        <div class="card"><img src="/assets/images/climateChange.png"><div class="sub-card"><h1>Cambio climático</h1><p>Propuestas de:</p></div></div>
+        <div class="card" (click)="change()"><img src="/assets/images/climateChange.png"><div class="sub-card"><h1>Cambio climático</h1><p>Propuestas de:</p></div></div>
         <div class="card"><img src="/assets/images/solidResidue.png"><div class="sub-card"><h1>Residuos sólidos</h1><p>Propuestas de:</p></div></div>
         <div class="card"><img src="/assets/images/waterManagement.png"><div class="sub-card"><h1>Gestión de agua</h1><p>Propuestas de:</p></div></div>
         <div class="card"><img src="/assets/images/deforestation.png"><div class="sub-card"><h1>Deforestación</h1><p>Propuestas de:</p></div></div>

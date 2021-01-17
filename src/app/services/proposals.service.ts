@@ -18,6 +18,7 @@ export class ProposalsService {
 
   getContent(): Observable<Info>{
     return this.httpClient.get<Info>(`${this.apiURL}`);
+
   } 
 }
-console.log(data);
+// console.log(this.data);
