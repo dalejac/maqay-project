@@ -13,5 +13,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+hover = (target) => {
+  console.log(target);
+  target.classList.add('show-card');
+}
 }
