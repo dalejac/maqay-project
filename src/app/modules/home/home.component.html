@@ -1,15 +1,18 @@
+<header>
+    <h1>La agenda ambiental</h1>
+    <!-- <img src=""> -->
+</header>
 <section class="container">
-    <!-- <div class="transparency"> -->
         <h1>Conoce las propuestas de los candidatos</h1>
         <h2>ELECCIONES 2021</h2>
         <br>
         <br>
         <p>Ordenar propuestas</p>
-        <div class="container-buttons"><!-- (click)="viewMode = 'topic'"  -->
+        <div class="container-buttons">
             <button [class.active]="viewMode == 'topic'" rel="topic" (click)="viewMode = 'topic'" >Por tema ambiental</button>
             <button [class.active]="viewMode == 'party'" rel="party" (click)="viewMode = 'party'">Por partido político</button>
         </div>
-         <!-- </div> -->
+
 </section>
 <section class="cards-box" [ngSwitch]="viewMode">
     <div class="topic-cards" *ngSwitchCase="'topic'">

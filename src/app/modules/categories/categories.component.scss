@@ -20,3 +20,14 @@ main {
     justify-content: center;
 }
 
+app-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+}
+
+app-nav-bar {
+    position: relative;
+    display: flex;
+    margin-left: 75%;
+}
